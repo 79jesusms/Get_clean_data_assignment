@@ -26,7 +26,7 @@ For each record in the dataset it is provided:
 - An identifier of the subject who carried out the experiment. 
 
 ### Feature Selection:
-(`features_info.txt`)
+`features_info.txt`
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -86,7 +86,7 @@ tBodyGyroJerkMean
 The complete list of variables of each feature vector is available in `'features.txt'`
 
 ### Tidy and final data variables (alphabetically ordered, same variables for both files): 
-`final_data`, `tidy_data.txt`.
+`final_data.txt`, `tidy_data.txt`
 
 180 observations of 88 variables, taken in 6 different positions in 30 different volunteers as explained above:
 
