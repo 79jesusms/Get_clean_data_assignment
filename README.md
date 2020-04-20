@@ -1,1 +1,1 @@
-# Get_clean_data_assignment
+# Getting and cleaning data. Week 4 assignment.
