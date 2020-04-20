@@ -48,7 +48,7 @@ Load `dplyr` package:
     select(subject, code, contains("mean"), contains("std"))
 ```
 
-### 3. Uses descriptive activity names to name the activities in the data set
+### 3. Uses descriptive activity names to name the activities in the data set.
 ```R
   tidy_data$code <- activity_labels[tidy_data$code, 2]
 ```
@@ -71,6 +71,9 @@ Load `dplyr` package:
 ```
 
 ### 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+* Each variable forms a column
+* Each observation forms a row
+* Each type of observation goes in a table or file
 ```R
   final_data <- tidy_data %>%
     group_by(subject, activity) %>%
