@@ -8,14 +8,12 @@
 4.	Run R script (source code) to obtain merged, tidy and final data files
 
 ### Code explanation
-
 Load `dplyr` package:
 ```R
   library(dplyr)
 ```
 
 #### 0. Reading and assigning datasets to tables with readable naming
-
 #### Read variable names
 ```R
   variable_names <- read.table("./UCI HAR Dataset/features.txt", col.names = c("n","functions"))
