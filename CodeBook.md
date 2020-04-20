@@ -83,7 +83,7 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
-The complete list of variables of each feature vector is available in `'features.txt'`
+The complete list of variables of each feature vector is available in `features.txt`
 
 ### Tidy and final data variables (alphabetically ordered, same variables for both files): 
 `final_data.txt`, `tidy_data.txt`
