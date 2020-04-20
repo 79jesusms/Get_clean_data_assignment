@@ -12,25 +12,21 @@ Load `dplyr` package:
 ```R
   library(dplyr)
 ```
-
 #### 0. Reading and assigning datasets to tables with readable naming
 #### Read variable names
 ```R
   variable_names <- read.table("./UCI HAR Dataset/features.txt", col.names = c("n","functions"))
 ```
-
 #### Read activity labels
 ```R
   activity_labels <-  read.table("./UCI HAR Dataset/activity_labels.txt", col.names = c("code", "activity"))
 ```
-
 #### Read train datasets
 ```R
   X_train <- read.table("./UCI HAR Dataset/train/X_train.txt", col.names = variable_names$functions)
   Y_train <- read.table("./UCI HAR Dataset/train/y_train.txt", col.names = "code")
   subj_train <- read.table("./UCI HAR Dataset/train/subject_train.txt", col.names = "subject")
 ```
-
 #### Read test datasets
 ```R
   X_test <- read.table("./UCI HAR Dataset/test/X_test.txt", col.names = variable_names$functions)`
