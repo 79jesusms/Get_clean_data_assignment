@@ -5,7 +5,7 @@
 1.	Download and unzip the dataset https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip into your working R directory
 2.	Read and browse UCI HAR Dataset folders and “readme” text files
 3.	Download R script ```run_analysis.R```(source code) to your working R directory
-4.	Run R script (source code) to obtain merged, tidy and final data files
+4.	Run R script ```run_analysis.R```(source code) to obtain merged, tidy and final data files
 
 ### Code explanation
 Load `dplyr` package:
