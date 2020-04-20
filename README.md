@@ -51,7 +51,7 @@ Load `dplyr` package:
 ### 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 ```R
   tidy_data <- merged_data %>%
-  select(subject, code, contains("mean"), contains("std"))
+    select(subject, code, contains("mean"), contains("std"))
 ```
 
 ### 3. Uses descriptive activity names to name the activities in the data set
@@ -79,8 +79,9 @@ Load `dplyr` package:
 ### 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 ```R
   final_data <- tidy_data %>%
-  group_by(subject, activity) %>%
-  summarise_all(funs(mean))
+    group_by(subject, activity) %>%
+      summarise_all(funs(mean))
+  
   write.table(final_data, "final_data.txt", row.name=FALSE)
   str(final_data)
 ```
