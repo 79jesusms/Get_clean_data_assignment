@@ -88,7 +88,7 @@ The complete list of variables of each feature vector is available in `features.
 ### Tidy and final data variables (alphabetically ordered, same variables for both files): 
 `final_data.txt`, `tidy_data.txt`
 
-180 observations of 88 variables, taken in 6 different positions in 30 different volunteers as explained above:
+180 observations of 88 variables, taken in 6 different positions (`activity`) in 30 different volunteers (`subject`) as explained above:
 
 1                                            activity   
 2   Angle.TimeBodyAccelerometerJerkMean..GravityMean.    
