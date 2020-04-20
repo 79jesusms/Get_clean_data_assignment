@@ -25,7 +25,8 @@ For each record in the dataset it is provided:
 - Its activity label.
 - An identifier of the subject who carried out the experiment. 
 
-### Feature Selection (####`features_info.txt`):
+### Feature Selection 
+####(`features_info.txt`):
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -84,94 +85,96 @@ tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in `'features.txt'`
 
-### Tidy and final data variables (alphabetically ordered, same variables for both files): ####`final_data`, `tidy_data.txt`.
+### Tidy and final data variables (alphabetically ordered, same variables for both files): 
+####`final_data`, `tidy_data.txt`.
 
 180 observations of 88 variables taken in 6 different positions in 30 different volunteers as explained above:
-1                                            activity
-`2   Angle.TimeBodyAccelerometerJerkMean..GravityMean.`
-`3            Angle.TimeBodyAccelerometerMean.Gravity.`
-`4        Angle.TimeBodyGyroscopeJerkMean.GravityMean.`
-`5            Angle.TimeBodyGyroscopeMean.GravityMean.`
-`6                                Angle.X.GravityMean.`
-`7                                Angle.Y.GravityMean.`
-`8                                Angle.Z.GravityMean.`
-`9                 FrequencyBodyAccelerometer.mean...X`
-`10                FrequencyBodyAccelerometer.mean...Y`
-`11                FrequencyBodyAccelerometer.mean...Z`
-`12            FrequencyBodyAccelerometer.meanFreq...X`
-`13            FrequencyBodyAccelerometer.meanFreq...Y`
-`14            FrequencyBodyAccelerometer.meanFreq...Z`
-`15                 FrequencyBodyAccelerometer.std...X`
-`16                 FrequencyBodyAccelerometer.std...Y`
-`17                 FrequencyBodyAccelerometer.std...Z`
-`18            FrequencyBodyAccelerometerJerk.mean...X`
-`19            FrequencyBodyAccelerometerJerk.mean...Y`
-`20            FrequencyBodyAccelerometerJerk.mean...Z`
-`21        FrequencyBodyAccelerometerJerk.meanFreq...X`
-`22        FrequencyBodyAccelerometerJerk.meanFreq...Y`
-`23        FrequencyBodyAccelerometerJerk.meanFreq...Z`
-`24             FrequencyBodyAccelerometerJerk.std...X`
-`25             FrequencyBodyAccelerometerJerk.std...Y`
-`26             FrequencyBodyAccelerometerJerk.std...Z`
-`27     FrequencyBodyAccelerometerJerkMagnitude.mean..`
-`28 FrequencyBodyAccelerometerJerkMagnitude.meanFreq..`
-`29      FrequencyBodyAccelerometerJerkMagnitude.std..`
-`30         FrequencyBodyAccelerometerMagnitude.mean..`
-`31     FrequencyBodyAccelerometerMagnitude.meanFreq..`
-`32          FrequencyBodyAccelerometerMagnitude.std..`
-`33                    FrequencyBodyGyroscope.mean...X`
-`34                    FrequencyBodyGyroscope.mean...Y`
-`35                    FrequencyBodyGyroscope.mean...Z`
-`36                FrequencyBodyGyroscope.meanFreq...X`
-`37                FrequencyBodyGyroscope.meanFreq...Y`
-`38                FrequencyBodyGyroscope.meanFreq...Z`
-`39                     FrequencyBodyGyroscope.std...X`
-`40                     FrequencyBodyGyroscope.std...Y`
-`41                     FrequencyBodyGyroscope.std...Z`
-`42         FrequencyBodyGyroscopeJerkMagnitude.mean..`
-`43     FrequencyBodyGyroscopeJerkMagnitude.meanFreq..`
-`44          FrequencyBodyGyroscopeJerkMagnitude.std..`
-`45             FrequencyBodyGyroscopeMagnitude.mean..`
-`46         FrequencyBodyGyroscopeMagnitude.meanFreq..`
-`47              FrequencyBodyGyroscopeMagnitude.std..`
-`48                                            subject`
-`49                     TimeBodyAccelerometer.mean...X`
-`50                     TimeBodyAccelerometer.mean...Y`
-`51                     TimeBodyAccelerometer.mean...Z`
-`52                      TimeBodyAccelerometer.std...X`
-`53                      TimeBodyAccelerometer.std...Y`
-`54                      TimeBodyAccelerometer.std...Z`
-`55                 TimeBodyAccelerometerJerk.mean...X`
-`56                 TimeBodyAccelerometerJerk.mean...Y`
-`57                 TimeBodyAccelerometerJerk.mean...Z`
-`58                  TimeBodyAccelerometerJerk.std...X`
-`59                  TimeBodyAccelerometerJerk.std...Y`
-`60                  TimeBodyAccelerometerJerk.std...Z`
-`61          TimeBodyAccelerometerJerkMagnitude.mean..`
-`62           TimeBodyAccelerometerJerkMagnitude.std..`
-`63              TimeBodyAccelerometerMagnitude.mean..`
-`64               TimeBodyAccelerometerMagnitude.std..`
-`65                         TimeBodyGyroscope.mean...X`
-`66                         TimeBodyGyroscope.mean...Y`
-`67                         TimeBodyGyroscope.mean...Z`
-`68                          TimeBodyGyroscope.std...X`
-`69                          TimeBodyGyroscope.std...Y`
-`70                          TimeBodyGyroscope.std...Z`
-`71                     TimeBodyGyroscopeJerk.mean...X`
-`72                     TimeBodyGyroscopeJerk.mean...Y`
-`73                     TimeBodyGyroscopeJerk.mean...Z`
-`74                      TimeBodyGyroscopeJerk.std...X`
-`75                      TimeBodyGyroscopeJerk.std...Y` 
-`76                      TimeBodyGyroscopeJerk.std...Z` 
-`77              TimeBodyGyroscopeJerkMagnitude.mean..`
-`78               TimeBodyGyroscopeJerkMagnitude.std..` 
-`79                  TimeBodyGyroscopeMagnitude.mean..` 
-`80                   TimeBodyGyroscopeMagnitude.std..`
-`81                  TimeGravityAccelerometer.mean...X` 
-`82                  TimeGravityAccelerometer.mean...Y`
-`83                  TimeGravityAccelerometer.mean...Z` 
-`84                   TimeGravityAccelerometer.std...X` 
-`85                   TimeGravityAccelerometer.std...Y` 
-`86                   TimeGravityAccelerometer.std...Z`  
-`87           TimeGravityAccelerometerMagnitude.mean..` 
-`88            TimeGravityAccelerometerMagnitude.std..`
+
+1                                            activity   
+2   Angle.TimeBodyAccelerometerJerkMean..GravityMean.    
+3            Angle.TimeBodyAccelerometerMean.Gravity.    
+4        Angle.TimeBodyGyroscopeJerkMean.GravityMean.    
+5            Angle.TimeBodyGyroscopeMean.GravityMean.    
+6                                Angle.X.GravityMean.    
+7                                Angle.Y.GravityMean.    
+8                                Angle.Z.GravityMean.    
+9                 FrequencyBodyAccelerometer.mean...X    
+10                FrequencyBodyAccelerometer.mean...Y    
+11                FrequencyBodyAccelerometer.mean...Z    
+12            FrequencyBodyAccelerometer.meanFreq...X    
+13            FrequencyBodyAccelerometer.meanFreq...Y    
+14            FrequencyBodyAccelerometer.meanFreq...Z    
+15                 FrequencyBodyAccelerometer.std...X    
+16                 FrequencyBodyAccelerometer.std...Y    
+17                 FrequencyBodyAccelerometer.std...Z    
+18            FrequencyBodyAccelerometerJerk.mean...X    
+19            FrequencyBodyAccelerometerJerk.mean...Y    
+20            FrequencyBodyAccelerometerJerk.mean...Z    
+21        FrequencyBodyAccelerometerJerk.meanFreq...X    
+22        FrequencyBodyAccelerometerJerk.meanFreq...Y    
+23        FrequencyBodyAccelerometerJerk.meanFreq...Z    
+24             FrequencyBodyAccelerometerJerk.std...X    
+25             FrequencyBodyAccelerometerJerk.std...Y    
+26             FrequencyBodyAccelerometerJerk.std...Z    
+27     FrequencyBodyAccelerometerJerkMagnitude.mean..    
+28 FrequencyBodyAccelerometerJerkMagnitude.meanFreq..    
+29      FrequencyBodyAccelerometerJerkMagnitude.std..    
+30         FrequencyBodyAccelerometerMagnitude.mean..    
+31     FrequencyBodyAccelerometerMagnitude.meanFreq..    
+32          FrequencyBodyAccelerometerMagnitude.std..    
+33                    FrequencyBodyGyroscope.mean...X    
+34                    FrequencyBodyGyroscope.mean...Y    
+35                    FrequencyBodyGyroscope.mean...Z    
+36                FrequencyBodyGyroscope.meanFreq...X    
+37                FrequencyBodyGyroscope.meanFreq...Y    
+38                FrequencyBodyGyroscope.meanFreq...Z    
+39                     FrequencyBodyGyroscope.std...X    
+40                     FrequencyBodyGyroscope.std...Y    
+41                     FrequencyBodyGyroscope.std...Z    
+42         FrequencyBodyGyroscopeJerkMagnitude.mean..    
+43     FrequencyBodyGyroscopeJerkMagnitude.meanFreq..    
+44          FrequencyBodyGyroscopeJerkMagnitude.std..    
+45             FrequencyBodyGyroscopeMagnitude.mean..    
+46         FrequencyBodyGyroscopeMagnitude.meanFreq..    
+47              FrequencyBodyGyroscopeMagnitude.std..    
+48                                            subject    
+49                     TimeBodyAccelerometer.mean...X    
+50                     TimeBodyAccelerometer.mean...Y    
+51                     TimeBodyAccelerometer.mean...Z    
+52                      TimeBodyAccelerometer.std...X    
+53                      TimeBodyAccelerometer.std...Y    
+54                      TimeBodyAccelerometer.std...Z    
+55                 TimeBodyAccelerometerJerk.mean...X    
+56                 TimeBodyAccelerometerJerk.mean...Y    
+57                 TimeBodyAccelerometerJerk.mean...Z    
+58                  TimeBodyAccelerometerJerk.std...X    
+59                  TimeBodyAccelerometerJerk.std...Y    
+60                  TimeBodyAccelerometerJerk.std...Z    
+61          TimeBodyAccelerometerJerkMagnitude.mean..    
+62           TimeBodyAccelerometerJerkMagnitude.std..    
+63              TimeBodyAccelerometerMagnitude.mean..    
+64               TimeBodyAccelerometerMagnitude.std..    
+65                         TimeBodyGyroscope.mean...X    
+66                         TimeBodyGyroscope.mean...Y    
+67                         TimeBodyGyroscope.mean...Z    
+68                          TimeBodyGyroscope.std...X    
+69                          TimeBodyGyroscope.std...Y    
+70                          TimeBodyGyroscope.std...Z    
+71                     TimeBodyGyroscopeJerk.mean...X    
+72                     TimeBodyGyroscopeJerk.mean...Y    
+73                     TimeBodyGyroscopeJerk.mean...Z    
+74                      TimeBodyGyroscopeJerk.std...X    
+75                      TimeBodyGyroscopeJerk.std...Y    
+76                      TimeBodyGyroscopeJerk.std...Z    
+77              TimeBodyGyroscopeJerkMagnitude.mean..    
+78               TimeBodyGyroscopeJerkMagnitude.std..    
+79                  TimeBodyGyroscopeMagnitude.mean..    
+80                   TimeBodyGyroscopeMagnitude.std..    
+81                  TimeGravityAccelerometer.mean...X    
+82                  TimeGravityAccelerometer.mean...Y    
+83                  TimeGravityAccelerometer.mean...Z    
+84                   TimeGravityAccelerometer.std...X    
+85                   TimeGravityAccelerometer.std...Y    
+86                   TimeGravityAccelerometer.std...Z    
+87           TimeGravityAccelerometerMagnitude.mean..    
+88            TimeGravityAccelerometerMagnitude.std..    
